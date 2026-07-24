@@ -1,5 +1,5 @@
 {
-  "name": "cvitalize-ai",
+  "name": "bossla-career",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,16 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@google/genai": "^0.1.2",
+    "@google/genai": "*",
     "clsx": "^2.1.1",
     "framer-motion": "^12.4.10",
     "html2pdf.js": "^0.10.2",
     "lucide-react": "^0.475.0",
     "mammoth": "^1.9.0",
-    "next": "16.2.11",
+    "next": "^15.1.7",
     "pdf-parse": "^1.1.1",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "recharts": "^2.15.1",
     "tailwind-merge": "^3.0.1"
   },
@@ -29,7 +29,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.11",
+    "eslint-config-next": "^15.1.7",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

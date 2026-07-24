@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
-  /* Standard Vercel Next.js Full-Stack Configuration */
+  turbopack: {
+    root: path.resolve(__dirname),
+  },
 };
 
 export default nextConfig;
