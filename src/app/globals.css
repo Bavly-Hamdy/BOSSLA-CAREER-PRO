@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-page: #ffffff;
+    --fg-page: #111111;
+    --bg-surface: #f9f9f9;
+    --bg-surface-inner: #f4f4f5;
+    --border-subtle: #e4e4e7;
+    --text-muted: #666666;
+    --bg-button: #111111;
+    --fg-button: #ffffff;
+  }
+
+  .dark {
+    --bg-page: #000000;
+    --fg-page: #ededed;
+    --bg-surface: #0a0a0a;
+    --bg-surface-inner: #171717;
+    --border-subtle: #262626;
+    --text-muted: #a3a3a3;
+    --bg-button: #ffffff;
+    --fg-button: #000000;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--fg-page);
+    font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading), system-ui, sans-serif;
+    letter-spacing: -0.03em;
+  }
+}
+
+/* Tactile Surface Card */
+.surface-matte {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--fg-page);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+/* Inner Surface Box */
+.surface-inner {
+  background-color: var(--bg-surface-inner);
+  border: 1px solid var(--border-subtle);
+  color: var(--fg-page);
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+/* Primary Button Pill */
+.btn-pill-primary {
+  background-color: var(--bg-button);
+  color: var(--fg-button);
+  border: 1px solid var(--bg-button);
+  transition: opacity 0.2s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+.btn-pill-primary:hover {
+  opacity: 0.9;
+}
+
+/* Secondary Button Pill */
+.btn-pill-secondary {
+  background-color: var(--bg-surface-inner);
+  color: var(--fg-page);
+  border: 1px solid var(--border-subtle);
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.btn-pill-secondary:hover {
+  border-color: var(--fg-page);
+}
+
+/* RTL Helpers */
+[dir="rtl"] {
+  text-align: right;
+}
+
+.text-justify-custom {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Professional Media Print Rules for Vector PDF Export */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  body > *:not(.printable-wrapper) {
+    display: none !important;
+  }
+
+  .no-print,
+  .no-print-backdrop {
+    display: none !important;
+  }
+
+  .printable-wrapper {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    background: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .printable-area {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .print-page-break {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+
+  .print-avoid-break {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 10mm 12mm 10mm 12mm;
+  }
+}
