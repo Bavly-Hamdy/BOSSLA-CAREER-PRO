@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   title: "Bossla Career | Smart Resume Analyzer & AI Career Co-Pilot",
   description: "Forensic ATS resume analyzer, keyword gap detector, bullet rewrites, and AI career co-pilot created by Bavly Hamdy.",
   icons: {
-    icon: "/logo.svg",
-    shortcut: "/logo.svg",
-    apple: "/logo.svg",
+    icon: "logo.svg",
+    shortcut: "logo.svg",
+    apple: "logo.svg",
   },
 };
 
