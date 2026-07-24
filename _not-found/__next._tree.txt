@@ -1,2 +1,2 @@
-:HL["/_next/static/chunks/01vjmy6_aa3vx.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"oDy-vshA4gBv9C_n7CJ3a"}
+:HL["/BOSSLA-CAREER-PRO/_next/static/chunks/01vjmy6_aa3vx.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"ZAKwfaQHM4o6T46bFCzQx"}
