@@ -9,7 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@google/genai": "0.1.1",
+    "@google/genai": "^0.1.2",
     "clsx": "^2.1.1",
     "framer-motion": "^12.4.10",
     "html2pdf.js": "^0.10.2",
