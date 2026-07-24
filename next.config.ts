@@ -1,12 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
-  basePath: "/BOSSLA-CAREER-PRO",
-  images: {
-    unoptimized: true,
-  },
-  trailingSlash: true,
+  /* Standard Vercel Next.js Full-Stack Configuration */
 };
 
 export default nextConfig;
