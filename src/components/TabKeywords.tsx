@@ -1,3 +1,6 @@
+ import helmet from 'helmet';
+ app.use(helmet());
+
  import rateLimit from 'express-rate-limit';
 
  const apiLimiter = rateLimit({
